@@ -3,6 +3,7 @@ public class max_min {
         int arr[]={5,2,7,12,8};
         int max=arr[0];
         int min=arr[0];
+        int k=2;
         for(int i=0;i<arr.length;i++){
             if(arr[i]>max){
                 max=arr[i];

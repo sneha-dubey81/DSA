@@ -1,6 +1,6 @@
 public class compress {
     public static void main(String[] args) {
-        String str="hhheeeellooo";
+        String str="hhheeeellooof";
         int count =1;
         StringBuilder newStr= new StringBuilder();
         for(int i=1;i<str.length();i++) {
