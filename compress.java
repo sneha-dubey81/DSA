@@ -1,13 +1,19 @@
 public class compress {
     public static void main(String[] args) {
-        String str="hhehhleeloooh";
-        String str1="";
-        for(int i=0;i<str.length();i++) {
-            char c=str.charAt(i);
-            if(str1.indexOf(c)==-1) {
-                str1 +=c;
+        String str="hhheeeellooo";
+        int count =1;
+        StringBuilder newStr= new StringBuilder();
+        for(int i=1;i<str.length();i++) {
+            if(str.charAt(i)==str.charAt(i-1)) {
+                count++;
+            }
+            else{
+                newStr.append(str.charAt(i-1)).append(count);
+                count=1;
             }
         }
-        System.out.println("Compressed string: "+str1);
+        newStr.append(str.charAt(str.length()-1)).append(count);
+        System.out.println("Compressed string: "+ newStr);
+         
     }
 }
