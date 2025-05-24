@@ -1,19 +1,18 @@
 public class sorted_rotated {
     public static void main(String[] args) {
-        int[] arr={54,1,12,33,45};
-        int max=0;int sort=0;;
-        for(int i=0;i<arr.length;i++){
-            if(arr[i]>max){
-                max=arr[i];
+        int[] arr={45,54,-1,12,33};
+        int count=0;
+        int n=arr.length;
+        for(int i=0;i<n;i++){
+            if(arr[i]>arr[(i+1)%n]){
+                count++;
             }
         }
-        for(int i=1;i<arr.length-1;i++){
-            if(arr[i]<arr[i+1]){
-                sort=1;
-            }
+        if(count==1){
+            System.out.println("array is sorted and rotated");
         }
-        if(arr[0]==max&&sort==1)
-        System.out.println("array is rotated and sorted"); 
-           
+        else{
+            System.out.println("array is not sorted and rotated");
+        }           
     }
 }
