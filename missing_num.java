@@ -7,7 +7,7 @@ public class missing_num {
             currSum+=arr[i];
         }
         int Mnum=sum-currSum;
-        System.out.println(Mnum);
+        System.out.println("Missing number is : "+Mnum);
     }
     public static void main(String[] args) {
         int[]arr={1,2,3,4,6,7};

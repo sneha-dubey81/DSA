@@ -10,7 +10,7 @@ public class leader {
                 arr1.add(max);
             }
         }
-        System.out.println(arr1); 
+        System.out.println("Leaders are : "+arr1); 
     }
     public static void main(String[] args) {
         int[] arr={17,16,17,4,6,3,5,8,2};
