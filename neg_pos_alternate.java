@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 public class neg_pos_alternate {
     public static void main(String[] args) {
         int[] arr={1,2,-1,3,-2,-3,4,-4,-5,5};
